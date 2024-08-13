@@ -6,48 +6,52 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado = "É responsável dar comida típica para animais em adoção?",
-        Alternativas: [
+        enunciado: "Como a música de um artista pode promover o respeito e a conscientização sobre a inclusão e a caça ilegal que leva à extinção de animais?" ,
+        alternativas: [
             {
-                texto: "Sim",
-                afirmação: "Faz com que o animal não passe fome."
+               texto: "Ele  pode abordar os tópicos em suas composições assim “educando” quem escutar a música.",
+               afirmação: "afirmação"
             },
             {
-                texto: "Não",
-                afirmação: "Faz mal ao animal e pode levar o mesmo à óbito."
+                texto: "O artista tentando abordar todos esses tópicos, pode diluir a mensagem fazendo com que nenhum do tópicos recebam atenção e a missão principal da música, falhe.",
+                afirmação: "afirmação"
             }
         ]
     },
     {
-        enunciado = "Como o acompanhamento veterinário pode influenciar a saúde dos animais em desfiles culturais e como a coleta seletiva ajuda para a sustentabilidade desses eventos?",
-        Alternativas: [
+        enunciado: "A acessibilidade, a diversidade musical e o crescimento urbano desenfreado impactam a inclusão social e a preservação de espécie ameaçadas?" ,
+        alternativas: [
             {
-                texto: "Pode ajudar",
+               texto: "A cultura dos povos indígenas é rica e caracteriza-se pela intensa relação com a natureza.A questão da procriação é natural e vista como comum",
+               afirmação: "afirmação"
+            },
+            {
+                texto: "Apoiam as medidas já tomadas.",
                 afirmação: "afirmação"
             }
         ]
-    }
-] 
-    {
-        enunciado = "É responsável praticar esportes com roupas indígenas?",
-        Alternativas: [
-            {
-                texto: "Sim",
-                afirmação: "Incentiva a cultura.."
-            },
-            {
-                texto: "Não",
-                afirmação: "É preconceituoso.."
-            }
-        ]
-    }
+    },
+    { 
+        enunciado: "A tecnologia assistiva está sendo aplicada para promover inclusão, a música como instrumento de conscientização e a luta contra o desmatamento para evitar a extinção de animais?" ,
+    alternativas: [
+        {
+           texto: "Uso das redes sociais para apoio e divulgação das ações.",
+           afirmação: "afirmação"
+        },
+        {
+            texto: "Não",
+            afirmação: "afirmação"
+        }
+    ]
+    },
+];
 
-let atual = 0;
+let atual = 0; 
 let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if (atual >= perguntas.length) {
+    if(atual >= perguntas.length){
         mostraResultado();
         return;
     }
@@ -58,7 +62,7 @@ function mostraPergunta() {
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -66,17 +70,17 @@ function mostraAlternativas(){
     }
 }
 
-function respostaSelecionada(opcaoSelecionada) {
+function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
 
-function mostraResultado() {
+function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = ""; 
 }
 
 mostraPergunta();
