@@ -6,40 +6,46 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Como a música de um artista pode promover o respeito e a conscientização sobre a inclusão e a caça ilegal que leva à extinção de animais?" ,
+        enunciado: "voce pratica esportes?" ,
         alternativas: [
             {
-               texto: "Ele  pode abordar os tópicos em suas composições assim “educando” quem escutar a música.",
-               afirmação: "afirmação"
+               texto: "sim",
+               afirmação: ["afirmação",
+               "por hobbie",
+               "por amor"
+            ]
             },
             {
-                texto: "O artista tentando abordar todos esses tópicos, pode diluir a mensagem fazendo com que nenhum do tópicos recebam atenção e a missão principal da música, falhe.",
-                afirmação: "afirmação"
+                texto: "não",
+                afirmação:[ "afirmação",
+                "não gosto",
+                "não tenho interesse"
+            ]
             }
         ]
     },
     {
-        enunciado: "A acessibilidade, a diversidade musical e o crescimento urbano desenfreado impactam a inclusão social e a preservação de espécie ameaçadas?" ,
+        enunciado: "quem foi mais revolucionario?" ,
         alternativas: [
             {
-               texto: "A cultura dos povos indígenas é rica e caracteriza-se pela intensa relação com a natureza.A questão da procriação é natural e vista como comum",
+               texto: "oppenheimer",
                afirmação: "afirmação"
             },
             {
-                texto: "Apoiam as medidas já tomadas.",
+                texto: "silvio santos",
                 afirmação: "afirmação"
             }
         ]
     },
     { 
-        enunciado: "A tecnologia assistiva está sendo aplicada para promover inclusão, a música como instrumento de conscientização e a luta contra o desmatamento para evitar a extinção de animais?" ,
+        enunciado: "oque é o V de vlan?" ,
     alternativas: [
         {
-           texto: "Uso das redes sociais para apoio e divulgação das ações.",
+           texto: "virtual",
            afirmação: "afirmação"
         },
         {
-            texto: "Não",
+            texto: "victor ferreira do amaral",
             afirmação: "afirmação"
         }
     ]
