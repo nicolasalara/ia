@@ -6,26 +6,28 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "voce pratica esportes?" ,
+        enunciado: "voce tem interesse na area de t.i" ,
         alternativas: [
             {
                texto: "sim",
                afirmação: ["afirmação",
-               "por hobbie",
-               "por amor"
+               "por facilidade",
+               "por amor",
+               "interesse tecnologico"           
             ]
             },
             {
                 texto: "não",
                 afirmação:[ "afirmação",
                 "não gosto",
-                "não tenho interesse"
+                "não tenho interesse",
+                "nao vejo sentido na tecnologia"          
             ]
             }
-        ]
+        
     },
     {
-        enunciado: "quem foi mais revolucionario?" ,
+        enunciado: "voce " ,
         alternativas: [
             {
                texto: "oppenheimer",
